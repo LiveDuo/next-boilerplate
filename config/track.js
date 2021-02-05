@@ -4,8 +4,8 @@ import { Route } from "react-router-dom";
 
 import Head from "next/head";
 
-const ganalyticsId = "G-BD4LT8RTDK"; // UA-xxxxxxxx-xx or G-xxxxxxxxxx
-const fullstoryId = "10G8DP"; // xxxxxx
+const ganalyticsId = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID;  // UA-xxxxxxxx-xx or G-xxxxxxxxxx
+const fullstoryId = process.env.NEXT_PUBLIC_FULL_STORY_ID; // xxxxxx
 
 const identify = async (token) => {
   try {

@@ -5,9 +5,10 @@ import { Heading, Box, Text } from "@chakra-ui/react";
 
 import Seo from "../components/seo";
 
-const company = "Company";
-const url = "https://newdomain.com";
-const email = "contact@newdomain.com";
+const company = process.env.NEXT_PUBLIC_COMPANY_NAME || "Company";
+const url = process.env.NEXT_PUBLIC_COMPANY_URL || "https://newdomain.com";
+const email = process.env.NEXT_PUBLIC_COMPANY_EMAIL || "contact@newdomain.com";
+
 const lastUpdated = "18 Jan 2021";
 
 const Section = () => (

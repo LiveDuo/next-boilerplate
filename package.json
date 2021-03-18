@@ -21,8 +21,10 @@
     "micro": "9.3.4",
     "mongodb": "3.6.3",
     "next": "latest",
+    "notion-client": "^4.3.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-notion-x": "^4.3.4",
     "react-router-dom": "5.2.0",
     "simple-redux-js": "0.7.1",
     "stripe": "8.131.1"

@@ -10,7 +10,7 @@ export const getStaticProps = async () => getNotionStaticProps('Niche-traffic-fo
 export default function IndexPage({recordMap}) {
   return (
     <Layout>
-      <Seo title={"Landing Page"} />
+      <Seo title={"Landing Page"} description={"Landing Page Description"}/>
       <NotionRenderer recordMap={recordMap}/>
     </Layout>
   );

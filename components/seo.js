@@ -6,7 +6,7 @@ import { TagManager, GoogleAnalytics, FullStory } from "../config/track";
 
 const twitterUsername = process.env.NEXT_PUBLIC_TWITTER_USERNAME || null;
 
-const Layout = ({ title, description, image, ganalytics = true, fullstory = true }) => (
+const Seo = ({ title, description, image, ganalytics = false, fullstory = false }) => (
   <>
     <Head>
       <title>{title}</title>
@@ -32,4 +32,4 @@ const Layout = ({ title, description, image, ganalytics = true, fullstory = true
   </>
 );
 
-export default Layout;
+export default Seo;
